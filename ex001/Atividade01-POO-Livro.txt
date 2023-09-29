@@ -1,0 +1,24 @@
+Atividade 01 – Classes e Objetos
+
+Objetivos:
+• Criar classes
+• Instanciar objetos
+1. Desenvolva uma classe em python que modela um objeto Livro. Um livro possui um título, nome do autor,
+editora e quantidade de páginas.
+Estrutura da classe Livro.py:
+    • Atributos:
+        – titulo
+        – autor
+        – editora
+        – qtde_paginas.
+
+2. A classe Livro contém ainda um método __init__
+a) O __init__ deve receber através de argumentos, os dois dados suficientes para criar um livro, que
+são título e autor.
+b) Defina um arquivo python chamado teste.py para testar a classe. O código deve criar quatro livros
+com dados diferentes. Para cada objeto, proceder conforme abaixo:
+    • Criar um objeto da classe livro.
+    • Popular os dados do objeto (ou seja, atribuir valores aos seus atributos).
+    • Mostrar o título do livro, o nome do autor, a editora e a quantidade de páginas.
+    • Alterar a quantidade de páginas.
+    • Mostrar título do livro, nome do autor, editora e quantidade de páginas.

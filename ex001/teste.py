@@ -1,17 +1,22 @@
 from livro import Livro
 
+#Objetos da Classe Livro
 livro1 = Livro("Java", "James Gosling", "new1", 213)
 livro2 = Livro("Python", "Guido Van Rossum", "new2", 400)
 livro3 = Livro("C++", "Bjarne Stroustrup", "new3", 500)
 livro4 = Livro("Assembly", "Ken Thompson", "new4", 100)
 
-print(f'O titulo do livro é {livro1.titulo}')
-print(f'O autor do livro é {livro2.autor}')
-print(f'A editora é {livro3.editora}')
-print(f'Esse livro tem {livro4.qtde_paginas} páginas')
+#Mostra os dados sobre o livro1
+print(f'Título: {livro1.titulo}')
+print(f'Nome do autor: {livro1.autor}')
+print(f'Editora: {livro1.editora}')
+print(f'Esse livro tem {livro1.qtde_paginas} páginas')
 
+#Altera a quantidade de páginas do livro1
 livro1.qtde_paginas = 400
-livro2.autor = "Lucas"
-print(livro2.autor)
-print(livro1.qtde_paginas)
 
+#Mostra os dados atualizados
+print(f'Título: {livro1.titulo}')
+print(f'Nome do autor: {livro1.autor}')
+print(f'Editora: {livro1.editora}')
+print(f'Esse livro tem {livro1.qtde_paginas} páginas')

@@ -1,6 +1,5 @@
 class Moto:
-
-    def __init__(self, marca, modelo, cor, marcha=0,menor_marcha=0,maior_marcha=5, ligada=False):
+    def __init__(self, marca, modelo, cor, marcha, menor_marcha, maior_marcha, ligada=False):
         self.marca = marca
         self.modelo = modelo
         self.cor = cor
@@ -9,53 +8,31 @@ class Moto:
         self.maior_marcha = maior_marcha
         self.ligada = ligada
         
-        
     def ligar(self):
-        if not self.ligada:
+        if self.ligada == False:
             self.ligada = True
-            print('MOTO LIGADA')
-        else:
-            print('MOTO JÁ ESTÁ LIGADA!')
     
     def desligar(self):
         if self.ligada == True:
             self.ligada = False
-            print('MOTO DESLIGADA')
-        else:
-            print('MOTO JÁ ESTÁ DESLIGA!')
-        
-        
-    def marcha_cima(self):
+
+    def marcha_acima(self):
         if self.marcha < self.maior_marcha:
             self.marcha += 1
-            print(f'Subindo para marcha {self.marcha}')
-        else:
-            print('Não é Possível subir mais marchas!')
             
-            
-    def marcha_baixo(self):
+    def marcha_abaixo(self):
         if self.marcha > self.menor_marcha:
-            self.marcha-= 1
-            print(f'Descendo para a marcha {self.marcha}')
-        else:
-            print('Não é Possível descer mais marchas!')
+            self.marcha -= 1
             
-    
     def imprimir(self):
-        print('>'*40)
         print(f'Marca: {self.marca}')
         print(f'Modelo: {self.modelo}')
         print(f'Cor: {self.cor}')
         print(f'Marcha: {self.marcha_extenso()}')
         print(f'Menor Marcha: {self.menor_marcha}')
         print(f'Maior Marcha: {self.maior_marcha}')
-        if self.ligada:
-            print(f'Ligada: SIM')
-        else:
-            print(f'Ligada: NÃO')
-        print('<'*40)
-        
-        
+        print(f'Ligada: {self.ligada}')
+              
     def marcha_extenso(self):
         if self.marcha == 0:
             return 'NEUTRO'

@@ -1,5 +1,4 @@
 class Cozinheiro:
-
     def __init__(self,trigo,ovos,manteiga,leite,fermento):
         self.trigo = trigo
         self.ovos = ovos

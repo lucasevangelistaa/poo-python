@@ -5,4 +5,3 @@ c2 = Cozinheiro(4,2,3,3,1)
 
 print(c1.trigo)
 print(c2.trigo)
-
