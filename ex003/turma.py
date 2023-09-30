@@ -1,4 +1,3 @@
-from estudante import Estudante
 class Turma:
     def __init__(self,nome):
         self.nome = nome

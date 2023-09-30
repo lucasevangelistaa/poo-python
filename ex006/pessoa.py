@@ -16,7 +16,6 @@ class Pessoa:
         else:
             print('O valor não é inteiro')
             
-    
     def obter_idade(self):
         return self.__idade
     

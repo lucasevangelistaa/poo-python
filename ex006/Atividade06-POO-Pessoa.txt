@@ -1,0 +1,38 @@
+Implemente uma classe chamada "Pessoa" que represente uma pessoa com atributos como
+nome, idade e endereço. Essa classe deve encapsular os atributos de forma que eles não
+possam ser acessados diretamente de fora da classe. Além disso, a classe deve fornecer
+métodos públicos para acessar e modificar esses atributos de forma controlada.
+
+A classe Pessoa deve ter os seguintes métodos públicos:
+
+    • Um método chamado "definir_nome" que recebe uma string como parâmetro e define
+    o nome da pessoa.
+
+    • Um método chamado "obter_nome" que retorna o nome da pessoa.
+
+    • Um método chamado "definir_idade" que recebe um número inteiro como parâmetro
+    e define a idade da pessoa.
+
+    • Um método chamado "obter_idade" que retorna a idade da pessoa.
+
+    • Um método chamado "definir_endereco" que recebe uma string como parâmetro e
+    define o endereço da pessoa.
+
+    • Um método chamado "obter_endereco" que retorna o endereço da pessoa.
+
+Observações:
+
+Os atributos nome, idade e endereço devem ser encapsulados, ou seja, eles devem ser
+acessados apenas por meio dos métodos públicos da classe.
+
+A idade deve ser um número inteiro positivo.
+
+Certifique-se de implementar validações adequadas nos métodos de definição para garantir
+que os atributos estejam de acordo com as restrições especificadas.
+
+Desenvolva um programa teste_pessoa.py que utilize a classe Pessoa e demonstre o
+funcionamento dos métodos implementados. Crie objetos Pessoa, atribua valores aos
+atributos usando os métodos de definição e exiba os valores dos atributos usando os métodos
+de obtenção.
+
+Lembre-se de seguir as melhores práticas de encapsulamento

@@ -1,0 +1,61 @@
+Você foi contratado para desenvolver um sistema de controle remoto para uma empresa de
+televisores. Para isso, você precisa implementar duas classes em Python: "Televisor" e
+"ControleRemoto".
+
+A classe "Televisor" deve representar um televisor e ter os seguintes atributos:
+
+"ligado" (booleano, privado): indica se o televisor está ligado ou desligado.
+"canal_atual" (inteiro, protegido): indica o número do canal atual do televisor.
+"volume" (inteiro, protegido): indica o nível de volume do televisor.
+
+A classe "Televisor" deve ter os seguintes métodos:
+
+"ligar()": recebe nenhum parâmetro e liga o televisor, definindo o atributo "ligado" como True.
+
+"desligar()": recebe nenhum parâmetro e desliga o televisor, definindo o atributo "ligado"
+como False.
+
+"mudar_canal(numero_canal)": recebe um parâmetro "numero_canal" (inteiro) e muda o
+canal atual do televisor para o número especificado, alterando o atributo "_canal_atual".
+"aumentar_volume()": recebe nenhum parâmetro e aumenta o nível de volume do televisor,
+incrementando o atributo "_volume".
+
+"diminuir_volume()": recebe nenhum parâmetro e diminui o nível de volume do televisor,
+decrementando o atributo "_volume".
+
+"exibir_status()": recebe nenhum parâmetro e exibe na tela o status atual do televisor,
+incluindo se está ligado ou desligado, o canal atual e o volume. Para acessar os atributos
+protegidos "_canal_atual" e "_volume", utilize os métodos de acesso correspondentes.
+
+A classe "ControleRemoto" deve representar um controle remoto e ter um atributo privado:
+
+"televisor" (privado, objeto Televisor): representa o televisor associado ao controle remoto.
+A classe "ControleRemoto" deve ter os seguintes métodos:
+
+"associar_televisor(televisor)": recebe um parâmetro "televisor" (objeto Televisor) e associa o
+televisor ao controle remoto, armazenando-o no atributo privado "_televisor".
+
+"ligar_televisor()": recebe nenhum parâmetro e utiliza o método "ligar()" do objeto Televisor
+associado para ligar o televisor.
+
+"desligar_televisor()": recebe nenhum parâmetro e utiliza o método "desligar()" do objeto
+Televisor associado para desligar o televisor.
+
+"mudar_canal(numero_canal)": recebe um parâmetro "numero_canal" (inteiro) e utiliza o
+método "mudar_canal(numero_canal)" do objeto Televisor associado para mudar o canal do
+televisor.
+
+"aumentar_volume()": recebe nenhum parâmetro e utiliza o método "aumentar_volume()" do
+objeto Televisor associado para aumentar o volume.
+
+"diminuir_volume()": recebe nenhum parâmetro e utiliza o método "diminuir_volume()" do
+objeto Televisor associado para diminuir o volume.
+
+"exibir_status_televisor()": recebe nenhum parâmetro e utiliza o método "exibir_status()" do
+objeto Televisor associado para exibir o status do televisor.
+
+Desenvolva um programa teste_televisor que utilize as classes Televisor e ControleRemoto.
+Crie um objeto Televisor e um objeto ControleRemoto, associe o televisor ao controle remoto
+e teste as funcionalidades do controle remoto, como ligar o televisor, mudar o canal e ajustar
+o volume. Certifique-se de acessar os atributos protegidos e privados utilizando os métodos de
+acesso adequados.

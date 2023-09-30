@@ -1,4 +1,5 @@
-from televisor import Televisor, ControleRemoto
+from televisor import Televisor
+from controleremoto import ControleRemoto
 
 televisor = Televisor(False, 1, 0)
 controle_remoto = ControleRemoto()
