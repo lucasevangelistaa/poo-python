@@ -17,6 +17,7 @@ como False.
 
 "mudar_canal(numero_canal)": recebe um parâmetro "numero_canal" (inteiro) e muda o
 canal atual do televisor para o número especificado, alterando o atributo "_canal_atual".
+
 "aumentar_volume()": recebe nenhum parâmetro e aumenta o nível de volume do televisor,
 incrementando o atributo "_volume".
 

@@ -1,0 +1,41 @@
+Objetivo
+Nesta atividade, iremos praticar o conceito de encapsulamento em Python ao criar uma classe
+de Conta Bancária que utiliza modificadores de acesso para proteger os dados sensíveis. O
+encapsulamento é uma técnica essencial para garantir a integridade dos dados e controlar o
+acesso a eles, promovendo uma programação mais segura e organizada.
+
+Passos
+
+Definindo a Classe ContaBancaria:
+
+1. Crie uma classe chamada ContaBancaria.
+
+2. Defina o método construtor __init__ que inicializa os atributos: titular, saldo (inicializado
+como 0) e senha.
+
+3. Utilize modificadores de acesso apropriados para encapsular os atributos, tornando-os
+privados.
+
+Métodos de Acesso e Modificação:
+
+4. Crie métodos para acessar (get) e modificar (set) o saldo da conta.
+
+5. Implemente métodos para depositar e sacar dinheiro da conta, atualizando o saldo de
+acordo.
+
+6. Garanta que o saldo nunca fique negativo após um saque.
+
+Método para Alterar a Senha:
+
+7. Implemente um método para alterar a senha da conta. Este método deve exigir a senha
+atual como verificação antes de permitir a mudança.
+
+Testando a Funcionalidade:
+
+8. No programa principal (teste_conta.py), crie uma instância da classe ContaBancaria.
+
+9. Realize operações de depósito, saque e alteração de senha utilizando os métodos
+implementados.
+
+10. Tente acessar diretamente os atributos encapsulados fora da classe e observe os erros que
+ocorrem.
