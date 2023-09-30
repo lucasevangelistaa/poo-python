@@ -1,0 +1,24 @@
+Uma professora cansou de fazer o cálculo das notas dos estudantes manualmente, e pediu
+ajuda a você para fazer isso.
+
+Ela quer uma classe Estudante que receba o nome do estudante, e quer um método
+adicionar_notas onde ela entre com uma lista de quatro notas deste estudante, no formato
+float, e consiga obter a média deste estudante, usando o método obter_media. Se a
+quantidade de notas for diferente de 4 ou alguma das notas informadas não estiver no
+formato de float, deve retornar uma mensagem de erro.
+Mas, além disso, ela quer uma classe Turma, que tem um nome, e que agrupa todos os
+estudantes no campo estudantes do objeto, e onde ela quer os dados dos estudantes como
+um dicionário no formato
+
+{
+"num_matricula": 123,
+"estudante": objeto Estudante
+}
+
+E para adicionar o estudante na turma, ela quer o método adicionar_estudante, que recebe
+dois valores, a matrícula e os dados de estudante. Se já houver um estudante com o número
+de matrícula, deve imprimir uma mensagem de erro.
+
+E ela quer, ainda, um método onde ela passe o número da avaliação (1, 2, 3 ou 4) e retorne a
+média de nota dos alunos nessa avaliação. Foi definido que este método de Turma será
+chamado obter_media_prova.

@@ -1,23 +1,23 @@
 from estudante import Estudante
 from turma import Turma
 
-#Teste Turma
-turma = Turma("2° TI VESPERTINO")
+# Criar estudantes
+e1 = Estudante('Caio')
+e2 = Estudante('Godofredo')
+e3 = Estudante('Creuza')
 
-#Adicionar dois estudantes a turma
-turma.adicionar_estudante(2020, {"nome": "Lucas", "notas": {1: 5.3, 2: 8.0, 3: 8.0, 4: 6.0}})
+# Adicionar notas aos estudantes
+e1.adicionar_notas([8.0, 8.0, 5.0, 8.0])
+e2.adicionar_notas([8.0, 7.0, 8.0, 7.0])
+e3.adicionar_notas([8.0, 4.0, 9.0, 8.0])
 
-turma.adicionar_estudante(2019, {"nome": "João", "notas": {1: 9.0, 2: 8.0, 3: 7.0, 4: 5.0}})
+# Criar uma turma
+turma = Turma('Turma A')
 
+# Adicionar estudantes à turma
+turma.adicionar_estudante(123, e1)
+turma.adicionar_estudante(456, e2)
+turma.adicionar_estudante(789, e3)
 
-dados_lucas = turma.obter_dados_estudantes(2020)
-print(dados_lucas)
-
-print('_'*60)
-
-dados_joao = turma.obter_dados_estudantes(2019)
-print(dados_joao)
-
-print('='*30)
-media_prova_1 = turma.obter_media_prova(1)
-print(f' A média das provas foi {media_prova_1}')
+# Calcular a média da prova 2 na turma
+print(turma.obter_media_prova(4))
