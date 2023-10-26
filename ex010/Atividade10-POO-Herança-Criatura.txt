@@ -1,0 +1,48 @@
+Para praticar os conceitos de herança em Python, vamos desenvolver um sistema de
+gerenciamento de criaturas mitológicas com herança.
+1. Crie uma classe Criatura com os seguintes atributos:
+    • nome: uma string que representa o nome da criatura.
+    • tipo: uma string que descreve o tipo da criatura.
+    • habitat: uma string que indica o habitat da criatura.
+
+2. Implemente o método get_forca_total() na classe Criatura para calcular e retornar o dano
+que a criatura pode causar, e o método get_defesa_total() para calcular e retornar o dano
+que a criatura pode suportar.
+
+3. Crie uma classe Monstro que herda de Criatura e possui os seguintes atributos:
+    • força: um inteiro que representa a força do monstro.
+    • resistência: um inteiro que indica a resistência do monstro.
+    • dano: um inteiro que representa o dano causado pelo monstro.
+
+4. Crie uma classe Animal que herda de Criatura e possui os seguintes atributos:
+    • tamanho: uma string que descreve o tamanho do animal.
+    • velocidade: um número de ponto flutuante que indica a velocidade do animal.
+
+5. Implemente o método imprimir() nas classes Criatura, Monstro e Animal para que seja
+possível imprimi-los de forma legível.
+
+6. Adicione os métodos:
+    • atacar(monstro_alvo): realiza um ataque contra outra criatura.
+    • defender(ataque): reduz o dano recebido de um ataque.
+    • get_tipo_completo(): retorna o tipo completo da criatura, incluindo o habitat.
+
+Desafios Adicionais
+
+7. Adicione mais classes de criaturas mitológicas, como Demônios, Dragões, Minotauros,
+Unicórnios, Elfos e Gnomos.
+
+8. Introduza mais atributos e métodos às criaturas mitológicas para tornar o sistema mais
+complexo e realista.
+
+9. Adicione opções ao sistema, como a possibilidade de criar batalhas entre criaturas
+mitológicas.
+
+10. Crie um arquivo chamado teste_criatura.py.
+
+11. No arquivo, crie instâncias de diversas criaturas mitológicas e teste os métodos
+implementados.
+
+Dicas:
+
+Utilize o operador isinstance() para verificar o tipo de uma criatura.
+Use o método super() para acessar os atributos e métodos da classe pai.

@@ -1,0 +1,116 @@
+Objetivo
+Desenvolver uma interface textual para um jogo de batalhas entre criaturas mitológicas com
+herança.
+
+Instruções
+1. Crie uma interface textual para o jogo. A interface deve permitir que os jogadores:
+    * Criem suas criaturas
+    * Escolham suas criaturas para batalhar
+    * Realizem ataques e defesas
+    * Vejam o resultado da batalha
+
+2. O jogo deve ser em turnos. Em cada turno deve ser mostrada a lista de ações possíveis que o
+jogador pode realizar. Cada jogador deve ter a chance de atacar, defender ou realizar outra
+ação. A lista de ações possíveis deve ser exibida na forma de um menu. O jogador pode
+selecionar uma ação digitando o número correspondente. O jogador deve usar sua defesa para
+reduzir o dano recebido.
+
+3. A escolha de qual ação realizar depende do objetivo do jogador. Logo, a lista de ações
+possíveis pode ser personalizada para atender às necessidades do jogo. Por exemplo, o jogo
+pode permitir que o jogador use magias ou itens. Aqui estão algumas ideias para adicionar
+mais ações possíveis:
+
+• Magias: O jogador pode usar magias para atacar ou defender. Aqui estão alguns
+exemplos mais específicos de magias que o jogador pode usar:
+    - Um jogador com uma criatura que causa dano de fogo pode usar uma magia
+    de fogo para atacar uma criatura adversária que é fraca contra fogo.
+    - Gelo: Causa dano de gelo a uma criatura adversária.
+    - Eletricidade: Causa dano elétrico a uma criatura adversária.
+    - Veneno: Causa dano venenoso a uma criatura adversária ao longo do tempo.
+    - Dano físico: Causa dano físico a uma criatura adversária.
+
+• Itens: O jogador pode usar itens para aumentar seus atributos ou habilidades. Aqui
+estão alguns exemplos mais específicos de itens que o jogador pode usar:
+    - Uma espada mágica pode aumentar o dano causado por um ataque físico.
+    - Uma armadura mágica pode aumentar a defesa contra-ataques mágicos.
+    - Um elixir de cura pode restaurar a vida de uma criatura.
+    - Um anel de invisibilidade pode tornar uma criatura invisível.
+
+• Estratégias: O jogador pode usar estratégias para aumentar suas chances de vitória.
+Por exemplo:
+
+    - Um jogador com uma criatura que tem uma habilidade de cura pode usar essa
+    habilidade para se manter vivo durante uma batalha difícil.
+
+    - Um jogador com uma criatura que tem uma habilidade de invisibilidade pode
+    usar essa habilidade para se aproximar da criatura adversária sem ser
+    detectado.
+
+4. A batalha deve ter um cenário. O cenário pode ser um local específico, como uma floresta,
+um deserto, ou um oceano. O cenário também pode ser um evento, como uma tempestade,
+ou um eclipse.
+
+5. A criatura cujo habitat for o cenário da batalha deverá ter alguma vantagem. A vantagem
+pode ser um aumento na força, na resistência, ou no dano. A vantagem pode ser
+implementada usando um atributo ou um método. Por exemplo, uma criatura cujo habitat for
+uma floresta pode ter uma vantagem de força de 20%. Isso significa que a criatura causa 20%
+mais dano quando está lutando em uma floresta.
+
+6. O jogo deve terminar quando uma das criaturas morrer.
+
+Exemplo de saída:
+```
+Bem-vindo ao jogo de batalhas entre criaturas mitológicas!
+
+Jogador 1, crie sua criatura:
+
+> Nome: Minotauro
+> Tipo: Monstro
+> Habitat: Caverna
+> Força: 100
+> Resistência: 50
+> Dano: 20
+
+Jogador 2, crie sua criatura:
+
+> Nome: Dragão
+> Tipo: Monstro
+> Habitat: Montanha
+
+> Força: 150
+> Resistência: 75
+> Dano: 30
+
+**Iniciando Batalha**
+** Minotauro contra Dragão **
+** Cenário: Montanha **
+
+Jogador 1, escolha sua ação:
+1. Atacar
+2. Defender
+3. Passar o turno
+Jogador 1 ataca!
+> Minotauro ataca Dragão
+> Dano causado: 20
+
+Jogador 2, escolha sua ação:
+1. Atacar
+2. Defender
+3. Passar o turno
+
+Dragão defende!
+> Dano reduzido: 10
+
+**Resultado**
+
+Dragão tem 140 de vida.
+Minotauro tem 80 de vida.
+
+É a vez do jogador 2 atacar.
+
+Dica: Use o módulo `random` para gerar números aleatórios para escolher os cenários e para
+definir qual jogador realiza a primeira jogada da batalha.
+
+Estas são apenas algumas ideias para a atividade. Você pode usar sua criatividade para
+implementar outras funcionalidades, como um sistema de níveis, um sistema de magias, ou
+um sistema de comércio.
